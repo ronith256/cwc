@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=0.5" />
+  <link type="images/png" rel="icon" href="images/icons8-youtube.png" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
+    integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/single.css" />
+  <title>LiveLink</title>
+</head>
+
+<body class="no-nav">
+  <!--    header      -->
+  <header class="header">
+    <div class="header_container">
+      <div class="none"></div>
+      <div class="search">
+        <input type="text" placeholder="Search" />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+
+      <div class="user">
+        <div class="icon">
+          <i class="fa-solid fa-video"></i>
+          <i class="fa-solid fa-grip"></i>
+          <i class="fa-solid fa-bell"></i>
+        </div>
+
+        <div class="img">
+          <img src="images/logo.png" alt="" />
+        </div>
+      </div>
+
+      <div class="toggle">
+        <i class="fa-solid fa-bars" id="header-toggle"></i>
+      </div>
+    </div>
+  </header>
+  <!--    header      -->
+
+  <!--    nav      -->
+
+  <main class="single_pages">
+    <section class="video_items flex">
+      <div class="left">
+        <div class="left_content">
+          <!-- Add an id to the video container -->
+          <div class="video-container" id="video-container">
+            <video controls>
+              <!-- Add an id to the video source element -->
+              <source src="http://127.0.0.1:80/videos/1.mp4" type="video/mp4"  poster="" id="video-source" />
+            </video>
+
+            <!-- Add the overlay div to the video parent element -->
+            <div class="overlay">
+              <button class="pass-btn" onclick="location.href = 'payment.html';">Get Pass</button>
+              <button class="wishlist-btn">Add to Wishlist</button>
+            </div>
+          </div>
+
+          <!--        video tags            -->
+          <div class="tag">
+            <!-- Add an id to the video title element -->
+            <label class="tags" id="video-tags">#live #free</label>
+            <div></div>
+            <!-- Add an id to the video description element -->
+            <p id="video-title"></p>
+          </div>
+          <!--        video tags            -->
+
+          <!--        total viewer            -->
+          <div class="view flex2 border_bottom">
+            <!-- Add an id to the video view count element -->
+            <div class="view-text" id="video-view-count">
+              <span>Live Event</span>
+            </div>
+            <div class="flex">
+              <div class="icon">
+                <i class="fa fa-thumbs-up"></i>
+                <!-- Add an id to the video like count element -->
+                <label id="video-like-count"></label>
+              </div>
+              <div class="icon">
+                <i class="fa fa-thumbs-down"></i>
+                <!-- Add an id to the video dislike count element -->
+                <label id="video-dislike-count"></label>
+              </div>
+              <div class="icon">
+                <i class="fa fa-share"></i>
+                <label>SHARE</label>
+              </div>
+              <div class="icon">
+                <i class="fa fa-scissors"></i>
+                <label>CLIP</label>
+              </div>
+              <div class="icon">
+                <i class="fa fa-bookmark"></i>
+                <label>SAVE</label>
+              </div>
+              <div class="icon">
+                <i class="fa fa-ellipsis"></i>
+              </div>
+            </div>
+          </div>
+          <!--        total viewer            -->
+
+          <!--        video details            -->
+          <div class="details flex border_bottom">
+            <div class="img">
+              <img src="images/logo.png" alt="" />
+            </div>
+            <!-- Add an id to the video uploader element -->
+            <div class="heading" id="video-uploader">
+              <h4>Team 1 <i class="fa fa-circle-check"></i> </h4>
+              <span>0 Subscribers</span>
+              <h5 id="video-description"></h5>
+              <span>Show More</span>
+            </div>
+          </div>
+          <!--        video details            -->
+
+          <!--        video comment            -->
+          <div class="comment">
+            <div class="comment-heading flex">
+              <h4>1 Comment</h4>
+              <h4>
+                <i class="fa fa-list-ul"></i>
+                <label>SORT BY</label>
+              </h4>
+            </div>
+          </div>
+
+          <!--        video comment  by self           -->
+          <div class="details comment_self flex">
+            <div class="img">
+              <img src="images/logo.png" alt="" />
+            </div>
+            <div class="heading">
+              <input type="text" placeholder="Add a comment...." />
+            </div>
+          </div>
+          <!--        video comment  by other           -->
+          <div class="details_Comment">
+            <div class="details flex">
+              <div class="img">
+                <img
+                  src="https://img.icons8.com/external-victoruler-flat-victoruler/64/000000/external-boy-people-victoruler-flat-victoruler-5.png" />
+              </div>
+              <div class="heading">
+                <h4>Team 2 <span>2 months ago</span> </h4>
+                <p> Nice </p>
+                <div class="comment-like flex">
+                  <div class="icon">
+                    <i class="fa fa-thumbs-up"></i>
+                    <label>5</label>
+                  </div>
+                  <div class="icon">
+                    <i class="fa fa-thumbs
+                    <label>DISLIKE</label>
+                  </div>
+                  <div class="icon">
+                    <label>REPLY</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+    
+          <div class="right">
+            <div class="right_content">
+              <button class="chat">Show Chat Replay</button>
+    
+              <div class="tags">
+                <label class="tags-bg">All</label>
+                <label class="tags-bg">Web Design</label>
+                <label class="tags-bg">Frontend</label>
+                <label class="tags-bg">Backend</label>
+              </div>
+
+              <!-- Add a container for the video suggestions -->
+              <div id="suggestions-container"></div>
+            </div>
+          </div>
+        </section>
+      </main>
+    
+      <!-- <script src="scripts.js" charset="utf-8"></script> -->
+      <!-- Include jQuery and the JavaScript file that retrieves the video details -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="script.js"></script>
+    </body>
+    
+    </html>
+    
