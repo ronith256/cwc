@@ -92,8 +92,47 @@
     color: #fff;
     cursor: pointer;
   }
+
+
+  .fa-video {
+    transition: transform 0.3s ease-in-out;
+  }
+
+
+  .fa-video:hover {
+    transform: translateY(-5px);
+  }
+
+  .fa-grip {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .fa-grip:hover {
+    transform: translateY(-5px);
+  }
+
+  .fa-bell {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .fa-bell:hover {
+    transform: translateY(-5px);
+  }
+
+  .img{
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .img:hover {
+    transform: translateY(-5px);
+  }
+
+  .search input:focus {
+    border-color: blue; 
+  }
   
   /*-------------------header------------*/
+  
   /*--------------nav------------*/
   .nav {
     position: fixed;
@@ -381,6 +420,7 @@
   
   @media screen and (max-width:420px) {
     header .search {
+      margin: auto;
       width: 70%;
     }
   
